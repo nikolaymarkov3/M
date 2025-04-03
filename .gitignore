@@ -2,6 +2,7 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+logs
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
@@ -11,6 +12,10 @@ target/
 *.iws
 *.iml
 *.ipr
+.allure
+.idea/encodings.xml
+.idea/misc.xml
+.idea/vcs.xml
 
 ### Eclipse ###
 .apt_generated
@@ -33,6 +38,3 @@ build/
 
 ### VS Code ###
 .vscode/
-
-### Mac OS ###
-.DS_Store
