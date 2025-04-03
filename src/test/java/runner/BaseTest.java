@@ -3,7 +3,6 @@ package runner;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.WebDriverRunner;
 import com.codeborne.selenide.logevents.SelenideLogger;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -39,7 +38,6 @@ public class BaseTest {
                         .savePageSource(false));
             }
             case "firefox" -> {
-                WebDriverManager.firefoxdriver().setup();
                 WebDriverRunner.setWebDriver(new FirefoxDriver());
                 Configuration.baseUrl = BASE_URL;
                 getInstanceConfig().setCommonConfiguration();
