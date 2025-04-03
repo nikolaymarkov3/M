@@ -30,7 +30,6 @@ public class BaseTest {
 
         switch(browser) {
             case "chrome" -> {
-                WebDriverManager.chromedriver().setup();
                 WebDriverRunner.setWebDriver(new ChromeDriver());
                 Configuration.baseUrl = BASE_URL;
                 getInstanceConfig().setCommonConfiguration();
@@ -50,7 +49,6 @@ public class BaseTest {
                         .savePageSource(false));
             }
             case "edge" -> {
-                WebDriverManager.edgedriver().setup();
                 WebDriverRunner.setWebDriver(new EdgeDriver());
                 Configuration.baseUrl = BASE_URL;
                 getInstanceConfig().setCommonConfiguration();
